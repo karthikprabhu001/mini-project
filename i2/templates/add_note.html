@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add a Secure Note</h2>
+<form method="POST">
+    <label>Title:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Note:</label><br>
+    <textarea name="note" rows="5" required></textarea><br><br>
+
+    <button type="submit">Add Note</button>
+</form>
+{% endblock %}
